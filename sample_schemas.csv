@@ -1,0 +1,4 @@
+topic,expected_fields,current_fields,required_missing
+events.search,"user_id,query,timestamp","user_id,query,timestamp",0
+events.purchase,"user_id,sku,price,timestamp","user_id,sku,timestamp",1
+events.device,"device_id,os,version","device_id,os,version,locale",0
