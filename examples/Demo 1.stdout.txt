@@ -1,0 +1,2 @@
+block: events.purchase
+review: events.device

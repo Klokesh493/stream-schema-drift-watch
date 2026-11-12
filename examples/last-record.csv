@@ -1,0 +1,2 @@
+topic,expected_fields,current_fields,required_missing
+events.device,"device_id,os,version","device_id,os,version,locale",0
