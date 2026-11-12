@@ -4,11 +4,14 @@ Compares current event schemas against expected contracts and flags drift before
 
 ```mermaid
 flowchart LR
-    N0["sample_schemas.csv"]
-    N1["schema_drift_watch.py"]
-    N2["parse fields / drift / drift report"]
-    N3["Result for operator review"]
-    N0 --> N1 --> N2 --> N3
+    A["Expected and current event field lists"]
+    B["Compare field sets and required fields"]
+    C{"Required field missing?"}
+    D["Block schema change"]
+    E["Review additions or omit unchanged schema"]
+    A --> B --> C
+    C -->|Yes| D
+    C -->|No| E
 ```
 
 ## Operational boundaries
