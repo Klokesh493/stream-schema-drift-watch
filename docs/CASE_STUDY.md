@@ -2,7 +2,7 @@
 
 ## Business problem
 
-Compares current event schemas against expected contracts and flags drift before AI features break.
+A changed event contract can silently remove fields required by downstream feature consumers. Reviewers need to distinguish breaking gaps from additive changes.
 
 ## Reproduce the workflow
 
