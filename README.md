@@ -2,6 +2,8 @@
 
 A changed event contract can silently remove fields required by downstream feature consumers. Reviewers need to distinguish breaking gaps from additive changes.
 
+[Skills and verification](docs/ENGINEERING_NOTES.md)
+
 ## What I built
 
 I built a stream contract comparison that checks expected field names against current fields and reported required-field gaps. Missing fields block the change, and added fields go to review.
